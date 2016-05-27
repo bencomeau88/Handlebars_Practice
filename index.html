@@ -13,7 +13,8 @@
 <div id='rather'>What Would You Rather Be Doing?</div>
 <script type="text/handlebars-template" id="handlebarsQuiz">
 		<!-- ask Capi how to target the inputs inside of a "<div>" -->
-		<div id="quizList">
+		<!-- Also....how the fuck do I extract the "" from  the inputs-->
+		<form id="quizList">
 			<br>
 				<input type="radio" name="activities">Pooping with {{friendsName}}<br>
 				<input type="radio" name="activities">Swimming With a {{dangerous_prehistoric_creature}}<br>
@@ -21,7 +22,7 @@
 				<input type="radio" name="activities">Any of the above<br>
 				<input type="radio" name="activities">Or {{somthing_fun}}<br>
 			<br>
-			</div>
+		</form>
 			<div id="checkVal"></div>
 </script>
 
