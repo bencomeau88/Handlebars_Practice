@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<h1>Handlebars, yay.</h1>
+<div id="placeholder"></div>
+<script type="text/handlebars-template" id="handlebarsTemplate">
+	<h2>Hi, {{name}}! Does Handlebars make you want to have a {{healthCondition}}?</h2>
+</script>
+<div id='rather'>What Would You Rather Be Doing?</div>
+<script type="text/handlebars-template" id="handlebarsQuiz">
+		<!-- ask Capi how to target the inputs inside of a "<div>" -->
+		<div id="quizList">
+			<br>
+				<input type="radio" name="activities">Pooping with {{friendsName}}<br>
+				<input type="radio" name="activities">Swimming With a {{dangerous_prehistoric_creature}}<br>
+				<input type="radio" name="activities">Breathing phlogisticaed air until you die<br>
+				<input type="radio" name="activities">Any of the above<br>
+				<input type="radio" name="activities">Or {{somthing_fun}}<br>
+			<br>
+			</div>
+			<div id="checkVal"></div>
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="app.js"></script>	
+</body>
+</html>
