@@ -13,6 +13,19 @@ var $body = $('#placeholder');
 
 $(document).ready(function(){
 	$('input').on('click', function(){
-		$('#checkVal').html($("input:checked").val())
+		//two ways to get .val()of the input value and append it to $('#checkVal')div
+		var value=$('#checkVal').html($('[name=activities]').val());
+		// var value =$('#checkVal').html($("input:checked").val())
+
+		// trying to append the "" of the checked input
+		var answer = document.forms[0];
+		var snark = "";
+		for(i=0;i<answer.length;i++){
+			if(answer[i].checked){
+				snark = "I can't believe you said you would rather be:" + answer[i] + "that's werid"
+				$('#checkVal').append(snark)
+			}
+
+		}
 	})
 })
